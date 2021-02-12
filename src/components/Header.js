@@ -1,15 +1,22 @@
 import PropTypes from "prop-types";
+import { useLocation } from "react-router-dom";
+
 import Button from "./Button";
 
-const Header = ({ title }) => {
-  const onClick = () => {
-    console.log("Clicked!!!");
-  };
+
+const Header = ({ title, onAdd, showAdd }) => {
+const location = useLocation();
 
   return (
     <header className="header">
       <h1>{title}</h1>
-      <Button color="CornflowerBlue" text="Add" onClick={onClick} />
+      {location.pathname ==="/" &&
+        <Button
+          color={showAdd ? "red" : "CornflowerBlue"}
+          text={showAdd ? "Close" : "Add"}
+          onClick={onAdd}
+        />
+      }
     </header>
   );
 };

@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Create an app.",
+      "day": "Feb 16 at 9:00pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "DB - Have a drink.",
+      "day": "Feb 13 at 8:00pm",
+      "reminder": true
+    },
+    {
+      "text": "Cancel Bite Go",
+      "day": "Today at 12 noon",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "buy cake for birthday",
+      "day": "also today at lunch time",
+      "reminder": false,
+      "id": 5
+    },
+    {
+      "text": "Buy some pistacio",
+      "day": "today after all else is done",
+      "reminder": false,
+      "id": 6
+    }
+  ]
+}
